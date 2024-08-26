@@ -1,6 +1,22 @@
-@VerticalSlice.Api_HostAddress = http://localhost:5249
+@VerticalSlice_Api_HostAddress=http://localhost:5249
 
-GET {{VerticalSlice.Api_HostAddress}}/weatherforecast/
+GET {{VerticalSlice_Api_HostAddress}}/api/person/4f899617-fb23-4523-9fd7-8a70339c57d6
 Accept: application/json
+
+###
+
+POST {{VerticalSlice_Api_HostAddress}}/api/person
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": "4f899617-fb23-4523-9fd7-8a70339c57d6",
+    "firstName": "Joe",
+    "lastName": "Smith"
+}
+
+###
+
+DELETE {{VerticalSlice_Api_HostAddress}}/api/person/4f899617-fb23-4523-9fd7-8a70339c57d6
 
 ###
